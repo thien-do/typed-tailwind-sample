@@ -10,7 +10,6 @@ class Tailwind {
   // - https://github.com/microsoft/TypeScript/issues/4538
   // - https://en.wikipedia.org/wiki/Regular_expression
   $(): string { return this.value; }
-  [Symbol.toPrimitive](): string { return this.$(); }
 
   // Building methods
   private add(value: string): Tailwind {
