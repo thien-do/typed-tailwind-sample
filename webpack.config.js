@@ -16,7 +16,9 @@ module.exports = {
         use: [
           {
             loader: path.resolve('./loader.js'),
-            options: {}
+            options: {
+              config: path.resolve('./src/tw.ts')
+            }
           }
         ]
       },
